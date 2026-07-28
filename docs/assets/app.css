@@ -1,7 +1,14 @@
-/* 公开报告站点的基础样式；不加载远程脚本、字体或分析代码。 */
+/* 公开报告站点的最小样式，避免远程脚本和资源。 */
 :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; color: #172033; background: #f5f7fb; }
 body { margin: 0; line-height: 1.55; }
-main { max-width: 960px; margin: 0 auto; padding: 32px 20px; }
-header, section { background: #fff; border: 1px solid #dce3ef; border-radius: 12px; padding: 20px; margin-bottom: 18px; }
-h1, h2, p { margin-top: 0; }
-a { color: #1d4ed8; }
+main { max-width: 1120px; margin: 0 auto; padding: 32px 20px 56px; }
+header, section, article { background: #fff; border: 1px solid #dce3ef; border-radius: 12px; padding: 20px; margin-bottom: 18px; }
+h1, h2, h3, p { margin-top: 0; }
+h1 { font-size: 1.75rem; } h2 { font-size: 1.2rem; } h3 { font-size: 1rem; }
+.meta, .notice, footer { color: #526075; font-size: .9rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(205px, 1fr)); gap: 12px; }
+.card { border: 1px solid #dce3ef; border-radius: 8px; padding: 14px; }
+.label { color: #526075; font-size: .78rem; } .value { font-weight: 650; font-variant-numeric: tabular-nums; }
+.complete { color: #047857; } .degraded { color: #b45309; } .unavailable { color: #b91c1c; }
+table { width: 100%; border-collapse: collapse; font-size: .9rem; } th, td { padding: 9px; border-bottom: 1px solid #e5eaf2; text-align: left; vertical-align: top; }
+a { color: #1d4ed8; } code { font-size: .86em; } @media (max-width: 680px) { main { padding: 18px 12px; } table { display: block; overflow-x: auto; } }
