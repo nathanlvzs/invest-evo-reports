@@ -1,0 +1,7 @@
+/* 公开报告站点的基础样式；不加载远程脚本、字体或分析代码。 */
+:root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; color: #172033; background: #f5f7fb; }
+body { margin: 0; line-height: 1.55; }
+main { max-width: 960px; margin: 0 auto; padding: 32px 20px; }
+header, section { background: #fff; border: 1px solid #dce3ef; border-radius: 12px; padding: 20px; margin-bottom: 18px; }
+h1, h2, p { margin-top: 0; }
+a { color: #1d4ed8; }
